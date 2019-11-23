@@ -1,3 +1,9 @@
+# cloned from https://github.com/electron/electron-quick-start
+
+# build&run 
+** NPM https://medium.com/how-to-electron/a-complete-guide-to-packaging-your-electron-app-1bdc717d739f **
+** yarn https://github.com/electron-userland/electron-builder#MetadataDirectories-buildResources **
+
 # electron-quick-start
 
 **Clone and run for a quick way to see Electron in action.**
