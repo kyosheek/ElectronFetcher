@@ -1,4 +1,5 @@
-# cloned from https://github.com/electron/electron-quick-start
+# cloned from 
+** https://github.com/electron/electron-quick-start **
 
 # build&run 
 ** NPM https://medium.com/how-to-electron/a-complete-guide-to-packaging-your-electron-app-1bdc717d739f **
