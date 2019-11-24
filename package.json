@@ -1,22 +1,23 @@
 {
-  "name": "electron-quick-start",
+  "name": "ArmoSystems-task",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Test task fro ArmoSystems",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "kyoshee",
   "devDependencies": {
-    "electron": "^7.1.1"
-  }
+    "electron": "^7.1.1",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "com.electron.${name}",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps"
 }

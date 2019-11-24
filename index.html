@@ -2,18 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <title>Test task</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <canvas id="bg">Your browser does not support canvas</canvas>
+    <h1>I want to get some data!</h1>
+    <p id="p1">
+      Address:
+      <input id="data" placeholder="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png">
+    </p>
+    <p id="p2">
+      <select id="dataTypes">
+        <option value="text">text</option>
+        <option value="JSON">JSON</option>
+        <option value="formData">formData</option>
+        <option selected value="blob (img only)">blob (img only)</option>
+      </select>
+      <button type="button" id="startButton">Get data!</button>
+      <button type="button" id="copyButton">Copy placeholder</button>
+    </p>
 
-    <!-- You can also require other files to run in this process -->
+    <p id="p3">Retrieved data:</p>
+    <div id="retrievedData">
+    </div>
+    <!-- Скрипты -->
     <script src="./renderer.js"></script>
   </body>
 </html>
