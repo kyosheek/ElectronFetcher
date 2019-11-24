@@ -8,7 +8,7 @@
 
 # Electron Fetcher
 
-This is a minimal Electron application based on the [Electron Quick Start boilerplate](https://github.com/electron/electron-quick-start).
+This is an Electron application based on the [Electron Quick Start boilerplate](https://github.com/electron/electron-quick-start).
 
 ## Resources for Learning Electron
 
